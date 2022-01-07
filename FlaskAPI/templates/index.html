@@ -68,113 +68,115 @@
 <body>
 
   <form name="inquiry" action="/predict" method="POST">
-  <!-- <form name="inquiry" action="." method="POST"> -->
+    <!-- <form name="inquiry" action="." method="POST"> -->
     <div class="container">
       <center>
         <h1> Welcome...! <br> You are on official Registration Site.</h1>
       </center>
-      <hr>
-      <label> Rating </label> <br>
-      <input type="number" name="rating" step="0.1" size="15" required /> <br>
-      <label>Company size</label>
-<select name="Company Size"> <br> 
-    <option value="501 to 1000 employees">501 to 1000 employees</option>  
-    <option value="10000+ employees">10000+ employees</option>  
-    <option value="1001 to 5000 employees">1001 to 5000 employees</option>  
-    <option value="51 to 200 employees">51 to 200 employees</option>    
-</select>  <br>
-<label>Type of qwnersip</label><br>
-<select name="Type of ownersip">  
-    <option value="Company - Private">Company - Private</option>  
-    <option value="Government">Government</option>  
-    <option value="Company - Public">Company - Public</option>  
-    <option value="College / University">College / University</option>    
-</select>    
-<label>Industry</label><br>
-<select name="Industry">  
-    <option value="Aerospace & Defense">Aerospace & Defense</option>  
-    <option value="Health Care Services & Hospitals">Health Care Services & Hospitals</option>  
-    <option value="Security Services">Security Services</option>  
-    <option value="Energy">Energy</option>    
-</select>   <br>
-<label>Sector</label><br>
-<select name="Sector">  
-    <option value="Aerospace & Defense">Aerospace & Defense</option>  
-    <option value="Health Care">Health Care</option>  
-    <option value="Oil, Gas, Energy & Utilities">Oil, Gas, Energy & Utilities</option>  
-    <option value="Information Technology">Information Technology</option>    
-</select> <br>
-<label>Revenu</label><br>
-<select name="Revenu">  
-    <option value="Unknown / Non-Applicable">Unknown / Non-Applicable</option>  
-    <option value="Unknown / Non-Applicable">Unknown / Non-Applicable</option>  
-    <option value="Unknown / Non-Applicable">Unknown / Non-Applicable</option>  
-    <option value="Unknown / Non-Applicable">Unknown / Non-Applicable</option>    
-</select> <br>  
-<label>number of Company</label><br>
-<input type="number" name="num_comp" size="15" /> <br>
-<label>Hourly</label><br>
-<select name="Hourly">  
-    <option value=1>Yes</option>  
-    <option value=0>No</option>      
-</select> <br>
-<label>Employer provided</label><br>
-<select name="Employer provided">  
-    <option value=1>Yes</option>  
-    <option value=0>No</option>      
-</select> <br> 
-<label>State</label><br>
-<select name="state">  
-    <option value="CA">CA</option>  
-    <option value="NM">NM</option>  
-    <option value="LD">LD</option>  
-    <option value="FL">FL</option>    
-</select> <br> 
-<label>Job in Headquarter ?</label><br>
-<select name="Same State">  
-    <option value=1>Yes</option>  
-    <option value=0>No</option>      
-</select> <br> 
-<label>Age</label><br>
-<input type="number" name="age" placeholder= "i.e 10,35,100" size="15" /> <br>  
-<label>Python</label><br>
-<select name="Python">  
-    <option value=1>Yes</option>  
-    <option value=0>No</option>      
-</select> <br> 
-<label>Spark</label><br>
-<select name="Spark">  
-    <option value=1>Yes</option>  
-    <option value=0>No</option>      
-</select> <br> 
-<label>AWS</label><br>
-<select name="aws">  
-    <option value=1>Yes</option>  
-    <option value=0>No</option>      
-</select> <br> 
-<label>Excel</label><br>
-<select name="Excel">  
-    <option value=1>Yes</option>  
-    <option value=0>No</option>      
-</select> <br> 
-<label>Position</label><br>
-<select name="job_simp">  
-    <option value="data scientist">data scientist</option>  
-    <option value="data engineer">data engineer</option>  
-    <option value="manager">manager</option>  
-       
-</select> <br> 
-<label>Seniority</label><br>
-<select name="Seniority">  
-    <option value="senior">senior</option>  
-    <option value="na">na</option>  
-</select> <br> 
-<label>Description</label><br>
-<input type="number" name="desc__len" placeholder= "i.e 1000,3999,5000" size="15" /> <br>  
+      <center>
+        <hr>
+        <label> Rating </label> <br>
+        <input type="number" name="rating" step="0.1" size="15" required /> <br>
+        <label>Company size</label>
+        <select name="Company Size"> <br>
+          <option value="501 to 1000 employees">501 to 1000 employees</option>
+          <option value="10000+ employees">10000+ employees</option>
+          <option value="1001 to 5000 employees">1001 to 5000 employees</option>
+          <option value="51 to 200 employees">51 to 200 employees</option>
+        </select> <br>
+        <label>Type of qwnersip</label><br>
+        <select name="Type of ownersip">
+          <option value="Company - Private">Company - Private</option>
+          <option value="Government">Government</option>
+          <option value="Company - Public">Company - Public</option>
+          <option value="College / University">College / University</option>
+        </select>
+        <label>Industry</label><br>
+        <select name="Industry">
+          <option value="Aerospace & Defense">Aerospace & Defense</option>
+          <option value="Health Care Services & Hospitals">Health Care Services & Hospitals</option>
+          <option value="Security Services">Security Services</option>
+          <option value="Energy">Energy</option>
+        </select> <br>
+        <label>Sector</label><br>
+        <select name="Sector">
+          <option value="Aerospace & Defense">Aerospace & Defense</option>
+          <option value="Health Care">Health Care</option>
+          <option value="Oil, Gas, Energy & Utilities">Oil, Gas, Energy & Utilities</option>
+          <option value="Information Technology">Information Technology</option>
+        </select> <br>
+        <label>Revenu</label><br>
+        <select name="Revenu">
+          <option value="Unknown / Non-Applicable">Unknown / Non-Applicable</option>
+          <option value="Unknown / Non-Applicable">Unknown / Non-Applicable</option>
+          <option value="Unknown / Non-Applicable">Unknown / Non-Applicable</option>
+          <option value="Unknown / Non-Applicable">Unknown / Non-Applicable</option>
+        </select> <br>
+        <label>number of Company</label><br>
+        <input type="number" name="num_comp" size="15" /> <br>
+        <label>Hourly</label><br>
+        <select name="Hourly">
+          <option value=1>Yes</option>
+          <option value=0>No</option>
+        </select> <br>
+        <label>Employer provided</label><br>
+        <select name="Employer provided">
+          <option value=1>Yes</option>
+          <option value=0>No</option>
+        </select> <br>
+        <label>State</label><br>
+        <select name="state">
+          <option value="CA">CA</option>
+          <option value="NM">NM</option>
+          <option value="LD">LD</option>
+          <option value="FL">FL</option>
+        </select> <br>
+        <label>Job in Headquarter ?</label><br>
+        <select name="Same State">
+          <option value=1>Yes</option>
+          <option value=0>No</option>
+        </select> <br>
+        <label>Age</label><br>
+        <input type="number" name="age" placeholder="i.e 10,35,100" size="15" /> <br>
+        <label>Python</label><br>
+        <select name="Python">
+          <option value=1>Yes</option>
+          <option value=0>No</option>
+        </select> <br>
+        <label>Spark</label><br>
+        <select name="Spark">
+          <option value=1>Yes</option>
+          <option value=0>No</option>
+        </select> <br>
+        <label>AWS</label><br>
+        <select name="aws">
+          <option value=1>Yes</option>
+          <option value=0>No</option>
+        </select> <br>
+        <label>Excel</label><br>
+        <select name="Excel">
+          <option value=1>Yes</option>
+          <option value=0>No</option>
+        </select> <br>
+        <label>Position</label><br>
+        <select name="job_simp">
+          <option value="data scientist">data scientist</option>
+          <option value="data engineer">data engineer</option>
+          <option value="manager">manager</option>
 
-      <button type="submit" class="registerbtn">Predict</button>
-</div>  
-</form>
+        </select> <br>
+        <label>Seniority</label><br>
+        <select name="Seniority">
+          <option value="senior">senior</option>
+          <option value="na">na</option>
+        </select> <br>
+        <label>Description</label><br>
+        <input type="number" name="desc__len" placeholder="i.e 1000,3999,5000" size="15" /> <br>
+
+        <button type="submit" class="registerbtn">Predict</button>
+      </center>
+    </div>
+  </form>
 
 </body>
 
